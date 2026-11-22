@@ -53,22 +53,37 @@ function directory() {
   const cards = Array.from(document.querySelectorAll('.card'));
   const tabs = Array.from(document.querySelectorAll('[data-view]'));
   const areaButtons = Array.from(document.querySelectorAll('[data-area]'));
+  const topicButtons = Array.from(document.querySelectorAll('[data-topic]'));
   const search = one('#search');
   // 地区：选择记在本浏览器；条目的 data-areas 含 all 的（全国／全州通用）在任何地区都显示
   const areaKey = 'dingge-area-v1';
+  const oldAreas = {'epping-carlingford':'ryde-eastwood'}; // 第 6 版早期的地区，现并入 Ryde·伊士活
   function readArea() {
     try {
-      const saved = localStorage.getItem(areaKey);
+      let saved = localStorage.getItem(areaKey);
+      if (oldAreas[saved]) saved = oldAreas[saved];
       return areaButtons.some(button => button.dataset.area === saved) ? saved : 'all';
     } catch { return 'all'; }
   }
   let area = readArea();
+  // 功能：只用在“查服务”里；选择记在本浏览器；搜索时不受功能限制
+  const topicKey = 'dingge-topic-v1';
+  function readTopic() {
+    try {
+      const saved = localStorage.getItem(topicKey);
+      return topicButtons.some(button => button.dataset.topic === saved) ? saved : 'all';
+    } catch { return 'all'; }
+  }
+  let topic = readTopic();
+  const inTopic = card => topic === 'all' || (card.dataset.topics || '').split(' ').includes(topic);
+  const topicName = () => topic === 'all' ? '' : one('[data-topic="' + topic + '"]').textContent;
   const inArea = card => area === 'all' || card.dataset.areas.split(' ').some(a => a === 'all' || a === area);
   const areaName = () => area === 'all' ? '' : one('[data-area="' + area + '"]').textContent;
   function heading(view) {
     const name = areaName();
     if (view === 'events') return name ? name + say('的活动','的活動') : say('悉尼活动','悉尼活動');
     if (view === 'contacts') return name ? name + say('：找谁用中文问','：找誰用中文問') : say('找谁用中文问','找誰用中文問');
+    if (view === 'services' && topic !== 'all') return say('查服务：','查服務：') + topicName();
     return {services:say('生活服务与健康资料','生活服務與健康資料'),saved:say('我的收藏','我的收藏')}[view];
   }
   const views = ['events','services','contacts','saved'];
@@ -83,7 +98,7 @@ function directory() {
     let count = 0;
     for (const card of cards) {
       const expired = showSchedule(card);
-      const eligible = view === 'saved' ? saved.has(card.dataset.id) && !(query && expired) : !expired && inArea(card) && (all || card.dataset.group === view);
+      const eligible = view === 'saved' ? saved.has(card.dataset.id) && !(query && expired) : !expired && inArea(card) && (all || (card.dataset.group === view && (view !== 'services' || inTopic(card))));
       const when = card.querySelector('.when');
       const slots = Array.from(when.querySelectorAll('.slot'));
       const dates = slots.length ? slots.filter(slot => !slot.hidden).map(slot => slot.textContent).join(' ') : when.textContent;
@@ -96,7 +111,9 @@ function directory() {
       else tab.removeAttribute('aria-current');
     }
     for (const button of areaButtons) button.setAttribute('aria-pressed', String(button.dataset.area === area));
+    for (const button of topicButtons) button.setAttribute('aria-pressed', String(button.dataset.topic === topic));
     one('.areas').hidden = view === 'saved';
+    one('.topics').hidden = view !== 'services' || all;
     one('#heading').textContent = all ? say('搜索结果','搜尋結果') : heading(view);
     one('#count').textContent = view === 'saved' ? say('收藏保存在当前浏览器。','收藏保存在目前的瀏覽器。') : count + say(' 条',' 條');
     one('#empty').hidden = count !== 0;
@@ -112,6 +129,21 @@ function directory() {
     try { localStorage.setItem(areaKey,area); } catch {}
     render();
   });
+  for (const button of topicButtons) button.addEventListener('click',() => {
+    topic = button.dataset.topic;
+    try { localStorage.setItem(topicKey,topic); } catch {}
+    render();
+  });
+  one('#copy-prompt').onclick = async () => {
+    const text = one('#ai-prompt').textContent;
+    let copied = false;
+    try { await navigator.clipboard.writeText(text); copied = true; } catch {
+      const range = document.createRange(); range.selectNodeContents(one('#ai-prompt'));
+      const selection = getSelection(); selection.removeAllRanges(); selection.addRange(range);
+      try { copied = document.execCommand('copy'); } catch {}
+    }
+    one('#ai-message').textContent = copied ? say('已复制，可以粘贴了。','已複製，可以貼上了。') : say('请长按上面的文字，选择复制。','請長按上面的文字，選擇複製。');
+  };
   search.addEventListener('input',render);
   window.addEventListener('hashchange',() => { search.value = ''; render(); });
   watchDeadlines(render);
