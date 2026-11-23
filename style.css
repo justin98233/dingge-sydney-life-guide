@@ -45,3 +45,5 @@ nav{gap:.4rem}nav a{font-weight:700;padding:.4rem .68rem}nav a[aria-current],.ca
 @media(max-width:680px){.stats{display:grid;grid-template-columns:1fr 1fr}.features,.values{grid-template-columns:1fr}.feature img{width:52px;height:52px}.about .block>h2{font-size:1.4rem}}
 .story{margin:1rem 0 0;padding:1rem 1.2rem;background:#fbf3e2;border-radius:.9rem}.story p{margin:.3rem 0}.story b{color:#8c5a1e}
 .share-box{margin-top:1.4rem;padding:1rem;background:#eff4ec;border-radius:.75rem}.share-box h2{font-size:1.2rem}.share-box p{margin:.5rem 0}button.primary{background:var(--green);color:#fff;border-color:var(--green);font-weight:700}
+
+.qr-page .qr-img{display:block;width:100%;max-width:26rem;height:auto;margin:1rem auto;border:1px solid var(--line);border-radius:.5rem}.qr-page .block{padding:1rem 0}
