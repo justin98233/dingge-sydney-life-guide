@@ -112,7 +112,7 @@ function directory() {
     }
     for (const button of areaButtons) button.setAttribute('aria-pressed', String(button.dataset.area === area));
     for (const button of topicButtons) button.setAttribute('aria-pressed', String(button.dataset.topic === topic));
-    one('.areas').hidden = view === 'saved';
+    one('.areas').hidden = view === 'saved' || (view === 'services' && !all); // 服务都是全国／全州通用，地区按钮在“查服务”里没作用，藏起来
     one('.topics').hidden = view !== 'services' || all;
     one('#heading').textContent = all ? say('搜索结果','搜尋結果') : heading(view);
     one('#count').textContent = view === 'saved' ? say('收藏保存在当前浏览器。','收藏保存在目前的瀏覽器。') : count + say(' 条',' 條');
