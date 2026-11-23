@@ -1,0 +1,31 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//叮哥長者生活指南//悉尼長者生活指南//ZH
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-TIMEZONE:Australia/Sydney
+BEGIN:VEVENT
+UID:christmas-concert-20261202@dingge-sydney-life-guide
+DTSTAMP:20261123T134720Z
+DTSTART:20261202T000000Z
+DTEND:20261202T013000Z
+SUMMARY:社區聖誕音樂會
+LOCATION:Hurstville Library\, Queens Road and Dora Street\, Hurstville NSW
+DESCRIPTION:多元文化合唱團的聖誕音樂會，適合長者和家
+ 人一起去。出發前請先打電話向主辦方確認時間，主辦
+ 方可能臨時改期或取消。詳情和電話見：https://justin98233
+ .github.io/dingge-sydney-life-guide/guide-christmas-concert-hk.html
+URL:https://justin98233.github.io/dingge-sydney-life-guide/guide-christmas
+ -concert-hk.html
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:社區聖誕音樂會（明天）
+TRIGGER:-P1D
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:社區聖誕音樂會（1 小時後開始）
+TRIGGER:-PT1H
+END:VALARM
+END:VEVENT
+END:VCALENDAR

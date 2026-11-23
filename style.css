@@ -47,3 +47,13 @@ nav{gap:.4rem}nav a{font-weight:700;padding:.4rem .68rem}nav a[aria-current],.ca
 .share-box{margin-top:1.4rem;padding:1rem;background:#eff4ec;border-radius:.75rem}.share-box h2{font-size:1.2rem}.share-box p{margin:.5rem 0}button.primary{background:var(--green);color:#fff;border-color:var(--green);font-weight:700}
 
 .qr-page .qr-img{display:block;width:100%;max-width:26rem;height:auto;margin:1rem auto;border:1px solid var(--line);border-radius:.5rem}.qr-page .block{padding:1rem 0}
+
+/* 手机桌面 App（PWA）与加到日历（2026-11-23） */
+#offline{position:sticky;top:0;z-index:20;margin:0;padding:.55rem 1rem;background:#fbf3e2;color:#6b4412;border-bottom:2px solid #e8b94a;text-align:center;font-weight:700;font-size:.95rem}
+#offline[hidden]{display:none}
+.tools .cal,.cal{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:.38rem .8rem;border:1px solid var(--green);background:var(--green);color:#fff;border-radius:.55rem;text-decoration:none;font-weight:700}
+.cal[hidden]{display:none}
+.install-now{margin:.6rem 0}.install-now[hidden]{display:none}.install-now button{font-weight:700;background:var(--green);color:#fff;border-color:var(--green)}
+.ico{width:1.5rem;height:1.5rem;vertical-align:-.3rem;margin:0 .2rem;color:var(--green)}
+.standalone .install-link{display:none}
+@media print{#offline,.cal{display:none}}

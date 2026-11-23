@@ -1,0 +1,31 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//叮哥长者生活指南//悉尼长者生活指南//ZH
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-TIMEZONE:Australia/Sydney
+BEGIN:VEVENT
+UID:mindful-mornings-20261125@dingge-sydney-life-guide
+DTSTAMP:20261123T134720Z
+DTSTART:20261125T233000Z
+DTEND:20261126T010000Z
+SUMMARY:Mindful Mornings 上午活动
+LOCATION:Epping Branch Library\, Chambers Court\, Epping NSW
+DESCRIPTION:Epping 图书馆的周四上午活动，需要在官网预约
+ 。出发前请先打电话向主办方确认时间，主办方可能临
+ 时改期或取消。详情和电话见：https://justin98233.github.io/d
+ ingge-sydney-life-guide/guide-mindful-mornings.html
+URL:https://justin98233.github.io/dingge-sydney-life-guide/guide-mindful-m
+ ornings.html
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Mindful Mornings 上午活动（明天）
+TRIGGER:-P1D
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Mindful Mornings 上午活动（1 小时后开始）
+TRIGGER:-PT1H
+END:VALARM
+END:VEVENT
+END:VCALENDAR

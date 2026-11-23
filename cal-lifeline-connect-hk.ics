@@ -1,0 +1,82 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//叮哥長者生活指南//悉尼長者生活指南//ZH
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-TIMEZONE:Australia/Sydney
+BEGIN:VEVENT
+UID:lifeline-connect-20261130@dingge-sydney-life-guide
+DTSTAMP:20261123T134720Z
+DTSTART:20261130T010000Z
+DTEND:20261130T050000Z
+SUMMARY:Lifeline 面對面傾談
+LOCATION:Chatswood Library\, 409 Victoria Avenue\, Chatswood NSW 2067
+DESCRIPTION:心情不好、想找人聊聊時，每週一中午到下午
+ ，可以到車士活圖書館當面傾談。出發前請先打電話向
+ 主辦方確認時間，主辦方可能臨時改期或取消。詳情和
+ 電話見：https://justin98233.github.io/dingge-sydney-life-guide/guide-
+ lifeline-connect-hk.html
+URL:https://justin98233.github.io/dingge-sydney-life-guide/guide-lifeline-
+ connect-hk.html
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Lifeline 面對面傾談（明天）
+TRIGGER:-P1D
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Lifeline 面對面傾談（1 小時後開始）
+TRIGGER:-PT1H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:lifeline-connect-20261207@dingge-sydney-life-guide
+DTSTAMP:20261123T134720Z
+DTSTART:20261207T010000Z
+DTEND:20261207T050000Z
+SUMMARY:Lifeline 面對面傾談
+LOCATION:Chatswood Library\, 409 Victoria Avenue\, Chatswood NSW 2067
+DESCRIPTION:心情不好、想找人聊聊時，每週一中午到下午
+ ，可以到車士活圖書館當面傾談。出發前請先打電話向
+ 主辦方確認時間，主辦方可能臨時改期或取消。詳情和
+ 電話見：https://justin98233.github.io/dingge-sydney-life-guide/guide-
+ lifeline-connect-hk.html
+URL:https://justin98233.github.io/dingge-sydney-life-guide/guide-lifeline-
+ connect-hk.html
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Lifeline 面對面傾談（明天）
+TRIGGER:-P1D
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Lifeline 面對面傾談（1 小時後開始）
+TRIGGER:-PT1H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:lifeline-connect-20261214@dingge-sydney-life-guide
+DTSTAMP:20261123T134720Z
+DTSTART:20261214T010000Z
+DTEND:20261214T050000Z
+SUMMARY:Lifeline 面對面傾談
+LOCATION:Chatswood Library\, 409 Victoria Avenue\, Chatswood NSW 2067
+DESCRIPTION:心情不好、想找人聊聊時，每週一中午到下午
+ ，可以到車士活圖書館當面傾談。出發前請先打電話向
+ 主辦方確認時間，主辦方可能臨時改期或取消。詳情和
+ 電話見：https://justin98233.github.io/dingge-sydney-life-guide/guide-
+ lifeline-connect-hk.html
+URL:https://justin98233.github.io/dingge-sydney-life-guide/guide-lifeline-
+ connect-hk.html
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Lifeline 面對面傾談（明天）
+TRIGGER:-P1D
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Lifeline 面對面傾談（1 小時後開始）
+TRIGGER:-PT1H
+END:VALARM
+END:VEVENT
+END:VCALENDAR

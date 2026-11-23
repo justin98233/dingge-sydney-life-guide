@@ -1,0 +1,31 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//叮哥长者生活指南//悉尼长者生活指南//ZH
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-TIMEZONE:Australia/Sydney
+BEGIN:VEVENT
+UID:digital-20261123@dingge-sydney-life-guide
+DTSTAMP:20261123T134720Z
+DTSTART:20261123T223000Z
+DTEND:20261124T003000Z
+SUMMARY:普通话长者数码班
+LOCATION:Chatswood Library\, 409 Victoria Avenue\, Chatswood NSW 2067
+DESCRIPTION:用普通话学数码技能，可向图书馆咨询下一期
+ 。出发前请先打电话向主办方确认时间，主办方可能临
+ 时改期或取消。详情和电话见：https://justin98233.github.io/d
+ ingge-sydney-life-guide/guide-digital.html
+URL:https://justin98233.github.io/dingge-sydney-life-guide/guide-digital.h
+ tml
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:普通话长者数码班（明天）
+TRIGGER:-P1D
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:普通话长者数码班（1 小时后开始）
+TRIGGER:-PT1H
+END:VALARM
+END:VEVENT
+END:VCALENDAR

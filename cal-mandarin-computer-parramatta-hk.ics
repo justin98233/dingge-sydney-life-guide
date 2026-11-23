@@ -1,0 +1,57 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//叮哥長者生活指南//悉尼長者生活指南//ZH
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-TIMEZONE:Australia/Sydney
+BEGIN:VEVENT
+UID:mandarin-computer-parramatta-20261129@dingge-sydney-life-guide
+DTSTAMP:20261123T134720Z
+DTSTART:20261129T230000Z
+DTEND:20261130T013000Z
+SUMMARY:普通話長者電腦課（Parramatta 市中心）
+LOCATION:Parramatta Library\, 5 Parramatta Square\, Parramatta NSW
+DESCRIPTION:用普通話學上網安全、防詐騙和好用的手機應
+ 用。出發前請先打電話向主辦方確認時間，主辦方可能
+ 臨時改期或取消。詳情和電話見：https://justin98233.github.i
+ o/dingge-sydney-life-guide/guide-mandarin-computer-parramatta-hk.html
+URL:https://justin98233.github.io/dingge-sydney-life-guide/guide-mandarin-
+ computer-parramatta-hk.html
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:普通話長者電腦課（Parramatta 市中心）（明天）
+TRIGGER:-P1D
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:普通話長者電腦課（Parramatta 市中心）（1 小時
+ 後開始）
+TRIGGER:-PT1H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:mandarin-computer-parramatta-20261206@dingge-sydney-life-guide
+DTSTAMP:20261123T134720Z
+DTSTART:20261206T230000Z
+DTEND:20261207T013000Z
+SUMMARY:普通話長者電腦課（Parramatta 市中心）
+LOCATION:Parramatta Library\, 5 Parramatta Square\, Parramatta NSW
+DESCRIPTION:用普通話學上網安全、防詐騙和好用的手機應
+ 用。出發前請先打電話向主辦方確認時間，主辦方可能
+ 臨時改期或取消。詳情和電話見：https://justin98233.github.i
+ o/dingge-sydney-life-guide/guide-mandarin-computer-parramatta-hk.html
+URL:https://justin98233.github.io/dingge-sydney-life-guide/guide-mandarin-
+ computer-parramatta-hk.html
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:普通話長者電腦課（Parramatta 市中心）（明天）
+TRIGGER:-P1D
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:普通話長者電腦課（Parramatta 市中心）（1 小時
+ 後開始）
+TRIGGER:-PT1H
+END:VALARM
+END:VEVENT
+END:VCALENDAR

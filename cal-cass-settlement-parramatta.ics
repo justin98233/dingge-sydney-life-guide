@@ -1,0 +1,107 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//叮哥长者生活指南//悉尼长者生活指南//ZH
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-TIMEZONE:Australia/Sydney
+BEGIN:VEVENT
+UID:cass-settlement-parramatta-20261123@dingge-sydney-life-guide
+DTSTAMP:20261123T134720Z
+DTSTART:20261123T220000Z
+DTEND:20261124T060000Z
+SUMMARY:CASS 定居服务（普通话）到馆
+LOCATION:Parramatta Library\, 5 Parramatta Square\, Parramatta NSW
+DESCRIPTION:CASS 社工在 Parramatta 图书馆，用中文协助办理定
+ 居相关事务。出发前请先打电话向主办方确认时间，主
+ 办方可能临时改期或取消。详情和电话见：https://justin98
+ 233.github.io/dingge-sydney-life-guide/guide-cass-settlement-parramatta.h
+ tml
+URL:https://justin98233.github.io/dingge-sydney-life-guide/guide-cass-sett
+ lement-parramatta.html
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:CASS 定居服务（普通话）到馆（明天）
+TRIGGER:-P1D
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:CASS 定居服务（普通话）到馆（1 小时后开始）
+TRIGGER:-PT1H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:cass-settlement-parramatta-20261130@dingge-sydney-life-guide
+DTSTAMP:20261123T134720Z
+DTSTART:20261130T220000Z
+DTEND:20261201T060000Z
+SUMMARY:CASS 定居服务（普通话）到馆
+LOCATION:Parramatta Library\, 5 Parramatta Square\, Parramatta NSW
+DESCRIPTION:CASS 社工在 Parramatta 图书馆，用中文协助办理定
+ 居相关事务。出发前请先打电话向主办方确认时间，主
+ 办方可能临时改期或取消。详情和电话见：https://justin98
+ 233.github.io/dingge-sydney-life-guide/guide-cass-settlement-parramatta.h
+ tml
+URL:https://justin98233.github.io/dingge-sydney-life-guide/guide-cass-sett
+ lement-parramatta.html
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:CASS 定居服务（普通话）到馆（明天）
+TRIGGER:-P1D
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:CASS 定居服务（普通话）到馆（1 小时后开始）
+TRIGGER:-PT1H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:cass-settlement-parramatta-20261207@dingge-sydney-life-guide
+DTSTAMP:20261123T134720Z
+DTSTART:20261207T220000Z
+DTEND:20261208T060000Z
+SUMMARY:CASS 定居服务（普通话）到馆
+LOCATION:Parramatta Library\, 5 Parramatta Square\, Parramatta NSW
+DESCRIPTION:CASS 社工在 Parramatta 图书馆，用中文协助办理定
+ 居相关事务。出发前请先打电话向主办方确认时间，主
+ 办方可能临时改期或取消。详情和电话见：https://justin98
+ 233.github.io/dingge-sydney-life-guide/guide-cass-settlement-parramatta.h
+ tml
+URL:https://justin98233.github.io/dingge-sydney-life-guide/guide-cass-sett
+ lement-parramatta.html
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:CASS 定居服务（普通话）到馆（明天）
+TRIGGER:-P1D
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:CASS 定居服务（普通话）到馆（1 小时后开始）
+TRIGGER:-PT1H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:cass-settlement-parramatta-20261214@dingge-sydney-life-guide
+DTSTAMP:20261123T134720Z
+DTSTART:20261214T220000Z
+DTEND:20261215T060000Z
+SUMMARY:CASS 定居服务（普通话）到馆
+LOCATION:Parramatta Library\, 5 Parramatta Square\, Parramatta NSW
+DESCRIPTION:CASS 社工在 Parramatta 图书馆，用中文协助办理定
+ 居相关事务。出发前请先打电话向主办方确认时间，主
+ 办方可能临时改期或取消。详情和电话见：https://justin98
+ 233.github.io/dingge-sydney-life-guide/guide-cass-settlement-parramatta.h
+ tml
+URL:https://justin98233.github.io/dingge-sydney-life-guide/guide-cass-sett
+ lement-parramatta.html
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:CASS 定居服务（普通话）到馆（明天）
+TRIGGER:-P1D
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:CASS 定居服务（普通话）到馆（1 小时后开始）
+TRIGGER:-PT1H
+END:VALARM
+END:VEVENT
+END:VCALENDAR

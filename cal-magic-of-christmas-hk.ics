@@ -1,0 +1,31 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//叮哥長者生活指南//悉尼長者生活指南//ZH
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-TIMEZONE:Australia/Sydney
+BEGIN:VEVENT
+UID:magic-of-christmas-20261205@dingge-sydney-life-guide
+DTSTAMP:20261123T134720Z
+DTSTART:20261205T053000Z
+DTEND:20261205T100000Z
+SUMMARY:Magic of Christmas 聖誕晚會
+LOCATION:Carss Bush Park\, Carwar Avenue\, Carss Park NSW
+DESCRIPTION:好市圍的聖誕晚會，在 Carss Bush Park 舉行，免費
+ ，不用預約。出發前請先打電話向主辦方確認時間，主
+ 辦方可能臨時改期或取消。詳情和電話見：https://justin98
+ 233.github.io/dingge-sydney-life-guide/guide-magic-of-christmas-hk.html
+URL:https://justin98233.github.io/dingge-sydney-life-guide/guide-magic-of-
+ christmas-hk.html
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Magic of Christmas 聖誕晚會（明天）
+TRIGGER:-P1D
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Magic of Christmas 聖誕晚會（1 小時後開始）
+TRIGGER:-PT1H
+END:VALARM
+END:VEVENT
+END:VCALENDAR

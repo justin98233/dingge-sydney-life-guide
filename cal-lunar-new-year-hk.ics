@@ -1,0 +1,31 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//叮哥長者生活指南//悉尼長者生活指南//ZH
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-TIMEZONE:Australia/Sydney
+BEGIN:VEVENT
+UID:lunar-new-year-20270213@dingge-sydney-life-guide
+DTSTAMP:20261123T134720Z
+DTSTART:20270213T010000Z
+DTEND:20270213T100000Z
+SUMMARY:伊士活農曆新年節
+LOCATION:Eastwood Oval\, Eastwood NSW
+DESCRIPTION:伊士活每年的農曆新年節慶，有攤位、表演和
+ 煙花。出發前請先打電話向主辦方確認時間，主辦方可
+ 能臨時改期或取消。詳情和電話見：https://justin98233.githu
+ b.io/dingge-sydney-life-guide/guide-lunar-new-year-hk.html
+URL:https://justin98233.github.io/dingge-sydney-life-guide/guide-lunar-new
+ -year-hk.html
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:伊士活農曆新年節（明天）
+TRIGGER:-P1D
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:伊士活農曆新年節（1 小時後開始）
+TRIGGER:-PT1H
+END:VALARM
+END:VEVENT
+END:VCALENDAR

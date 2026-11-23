@@ -1,0 +1,33 @@
+{
+ "name": "叮哥長者生活指南",
+ "short_name": "長者指南",
+ "description": "悉尼華人長者活動與生活服務，中文找得到。",
+ "lang": "zh-Hant",
+ "start_url": "index-hk.html",
+ "scope": "./",
+ "id": "index-hk.html",
+ "display": "standalone",
+ "orientation": "portrait",
+ "theme_color": "#194c3e",
+ "background_color": "#fffcf5",
+ "icons": [
+  {
+   "src": "icon-192.png",
+   "sizes": "192x192",
+   "type": "image/png",
+   "purpose": "any"
+  },
+  {
+   "src": "icon-512.png",
+   "sizes": "512x512",
+   "type": "image/png",
+   "purpose": "any"
+  },
+  {
+   "src": "icon-512.png",
+   "sizes": "512x512",
+   "type": "image/png",
+   "purpose": "maskable"
+  }
+ ]
+}

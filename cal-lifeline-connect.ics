@@ -1,0 +1,82 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//叮哥长者生活指南//悉尼长者生活指南//ZH
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-TIMEZONE:Australia/Sydney
+BEGIN:VEVENT
+UID:lifeline-connect-20261130@dingge-sydney-life-guide
+DTSTAMP:20261123T134720Z
+DTSTART:20261130T010000Z
+DTEND:20261130T050000Z
+SUMMARY:Lifeline 面对面倾谈
+LOCATION:Chatswood Library\, 409 Victoria Avenue\, Chatswood NSW 2067
+DESCRIPTION:心情不好、想找人聊聊时，每周一中午到下午
+ ，可以到车士活图书馆当面倾谈。出发前请先打电话向
+ 主办方确认时间，主办方可能临时改期或取消。详情和
+ 电话见：https://justin98233.github.io/dingge-sydney-life-guide/guide-
+ lifeline-connect.html
+URL:https://justin98233.github.io/dingge-sydney-life-guide/guide-lifeline-
+ connect.html
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Lifeline 面对面倾谈（明天）
+TRIGGER:-P1D
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Lifeline 面对面倾谈（1 小时后开始）
+TRIGGER:-PT1H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:lifeline-connect-20261207@dingge-sydney-life-guide
+DTSTAMP:20261123T134720Z
+DTSTART:20261207T010000Z
+DTEND:20261207T050000Z
+SUMMARY:Lifeline 面对面倾谈
+LOCATION:Chatswood Library\, 409 Victoria Avenue\, Chatswood NSW 2067
+DESCRIPTION:心情不好、想找人聊聊时，每周一中午到下午
+ ，可以到车士活图书馆当面倾谈。出发前请先打电话向
+ 主办方确认时间，主办方可能临时改期或取消。详情和
+ 电话见：https://justin98233.github.io/dingge-sydney-life-guide/guide-
+ lifeline-connect.html
+URL:https://justin98233.github.io/dingge-sydney-life-guide/guide-lifeline-
+ connect.html
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Lifeline 面对面倾谈（明天）
+TRIGGER:-P1D
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Lifeline 面对面倾谈（1 小时后开始）
+TRIGGER:-PT1H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:lifeline-connect-20261214@dingge-sydney-life-guide
+DTSTAMP:20261123T134720Z
+DTSTART:20261214T010000Z
+DTEND:20261214T050000Z
+SUMMARY:Lifeline 面对面倾谈
+LOCATION:Chatswood Library\, 409 Victoria Avenue\, Chatswood NSW 2067
+DESCRIPTION:心情不好、想找人聊聊时，每周一中午到下午
+ ，可以到车士活图书馆当面倾谈。出发前请先打电话向
+ 主办方确认时间，主办方可能临时改期或取消。详情和
+ 电话见：https://justin98233.github.io/dingge-sydney-life-guide/guide-
+ lifeline-connect.html
+URL:https://justin98233.github.io/dingge-sydney-life-guide/guide-lifeline-
+ connect.html
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Lifeline 面对面倾谈（明天）
+TRIGGER:-P1D
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Lifeline 面对面倾谈（1 小时后开始）
+TRIGGER:-PT1H
+END:VALARM
+END:VEVENT
+END:VCALENDAR

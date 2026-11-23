@@ -11,6 +11,8 @@ function showSchedule(container) {
   for (const slot of container.querySelectorAll('.slot')) slot.hidden = ended(slot.dataset.until);
   const expired = ended(container.dataset.expires);
   container.querySelector('.expired').hidden = !expired;
+  const cal = container.querySelector('#addcal'); // “加到手机日历”：所有场次都结束后藏起来
+  if (cal) cal.hidden = expired || Array.from(container.querySelectorAll('.slot')).every(slot => slot.hidden);
   return expired;
 }
 function watchDeadlines(render) {
@@ -229,3 +231,49 @@ function shareAbout(button) {
 if (one('#share-about')) shareAbout(one('#share-about'));
 if (one('.cards')) directory();
 if (one('.detail')) entry(one('.detail'));
+
+// ---------- 手机桌面 App（PWA）：离线缓存、没网提醒、安装按钮、加到日历 ----------
+const inWeChatApp = /MicroMessenger/i.test(navigator.userAgent);
+if ('serviceWorker' in navigator && (location.protocol === 'https:' || location.hostname === 'localhost')) {
+  window.addEventListener('load', () => { navigator.serviceWorker.register('sw.js').catch(() => {}); });
+}
+(function offlineNotice() {
+  const bar = document.createElement('p');
+  bar.id = 'offline';
+  bar.setAttribute('role', 'status');
+  bar.textContent = say('现在没有网络，显示的是上次打开时保存的内容。打电话和查最新场次，要有信号才准。','現在沒有網絡，顯示的是上次打開時保存的內容。打電話和查最新場次，要有信號才準。');
+  bar.hidden = navigator.onLine;
+  document.body.prepend(bar);
+  window.addEventListener('offline', () => { bar.hidden = false; });
+  window.addEventListener('online', () => { bar.hidden = true; });
+})();
+const standalone = window.matchMedia('(display-mode: standalone)').matches || navigator.standalone === true;
+if (standalone) document.documentElement.classList.add('standalone');
+if (one('#install-now')) {
+  const box = one('.install-now');
+  const msg = one('#install-msg');
+  let prompt;
+  if (standalone) { box.hidden = false; one('#install-now').hidden = true; msg.textContent = say('你已经在用桌面版了。','你已經在用桌面版了。'); }
+  window.addEventListener('beforeinstallprompt', event => {
+    event.preventDefault(); prompt = event;
+    if (!standalone) box.hidden = false;
+  });
+  one('#install-now').onclick = async () => {
+    if (!prompt) return;
+    prompt.prompt();
+    const choice = await prompt.userChoice;
+    msg.textContent = choice.outcome === 'accepted' ? say('已装好，桌面上找绿色的“叮”字图标。','已裝好，桌面上找綠色的「叮」字圖標。') : say('没关系，以后想装再点。','沒關係，以後想裝再點。');
+    prompt = null;
+  };
+  window.addEventListener('appinstalled', () => { msg.textContent = say('已装好，桌面上找绿色的“叮”字图标。','已裝好，桌面上找綠色的「叮」字圖標。'); });
+}
+if (one('#addcal')) {
+  one('#addcal').addEventListener('click', event => {
+    if (inWeChatApp) { // 微信不让网页直接下载文件
+      event.preventDefault();
+      one('#message').textContent = say('微信里不能直接加到日历。请点右上角“···”，选“在浏览器打开”，再点这个按钮。','微信裡不能直接加到日曆。請點右上角「···」，選「在瀏覽器打開」，再點這個按鈕。');
+    } else {
+      one('#message').textContent = say('手机会问你要不要加入日历，点“添加”就好。日期时间以主办方最新通知为准。','手機會問你要不要加入日曆，點「添加」就好。日期時間以主辦方最新通知為準。');
+    }
+  });
+}
