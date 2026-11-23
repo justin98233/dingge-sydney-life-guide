@@ -198,5 +198,34 @@ function entry(detail) {
     status.textContent = message;
   };
 }
+// 功能介绍页的“发给朋友”（2026-11-23）：和专题页一样，微信里提示用右上角转发，其他浏览器用系统分享或复制链接
+function shareAbout(button) {
+  const status = one('#message');
+  const field = one('#share-url');
+  const url = new URL(location.href);
+  url.hash = ''; url.search = '';
+  field.value = url.href;
+  const inWeChat = /MicroMessenger/i.test(navigator.userAgent);
+  button.onclick = async () => {
+    if (!inWeChat && navigator.share) {
+      try { await navigator.share({title:document.title,url:url.href}); return; }
+      catch (error) { if (error.name === 'AbortError') return; }
+    }
+    one('#share-options').hidden = false;
+    one('#share-tip').textContent = inWeChat ? say('点微信右上角「···」，选择「发送给朋友」。也可以复制下方链接。','點微信右上角「···」，選擇「傳送給朋友」。也可以複製下方連結。') : say('复制这一页的链接，再粘贴到聊天窗口。','複製這一頁的連結，再貼到聊天視窗。');
+    one('#copy').focus();
+  };
+  one('#copy').onclick = async () => {
+    let copied = false;
+    try { await navigator.clipboard.writeText(field.value); copied = true; } catch {
+      field.focus(); field.select();
+      try { copied = document.execCommand('copy'); } catch {}
+    }
+    const message = copied ? say('链接已复制，可以粘贴给朋友。','連結已複製，可以貼給朋友。') : say('请长按链接，选择复制。','請長按連結，選擇複製。');
+    one('#share-tip').textContent = message;
+    status.textContent = message;
+  };
+}
+if (one('#share-about')) shareAbout(one('#share-about'));
 if (one('.cards')) directory();
 if (one('.detail')) entry(one('.detail'));

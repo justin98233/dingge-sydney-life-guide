@@ -29,3 +29,19 @@ nav{gap:.4rem}nav a{font-weight:700;padding:.4rem .68rem}nav a[aria-current],.ca
 .art-mini{float:right;width:56px;height:56px;margin:0 0 .3rem .6rem}
 @media(max-width:680px){.art-mini{width:48px;height:48px}}
 @media print{.art-banner,.art-badge,.art-mini{display:none}}
+.intro-link{margin:.8rem 0 0;font-weight:700}
+.about-hero{background:#e2eddf;border-radius:.9rem;padding:clamp(1rem,3.2vw,2.1rem)}.about-hero .lead{font-size:1.08rem;margin:.4rem 0 .8rem}
+.stats{display:flex;flex-wrap:wrap;gap:.5rem;margin:0 0 1rem}.stats span{background:#fff;border-radius:.55rem;padding:.3rem .75rem}.stats b{font-size:1.35rem;color:var(--green);margin-right:.15rem}
+.action.primary{background:var(--green);color:#fff;border-color:var(--green);font-weight:700}
+.about .block{padding:1.5rem 0 .6rem}.about .block>h2{font-family:"Songti SC","Songti TC",serif;font-size:1.6rem}.about h3{margin-top:1.2rem}
+.step-no{display:inline-block;margin:0 0 .4rem;padding:.1rem .7rem;border-radius:1rem;background:#fbf3e2;color:#8c5a1e;font-weight:700;font-size:.9rem}
+.features{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:.8rem}.feature{background:#fff;border:1px solid var(--line);border-radius:.75rem;padding:1rem}.feature img{float:right;width:64px;height:64px;margin:0 0 .3rem .6rem}.feature h3{margin:0 0 .3rem}.feature p{margin:0}
+.plus,.who{padding-left:1.2rem}.plus li,.who li{margin:.35rem 0}.plus b,.values b,.steps b{display:block;color:var(--green)}
+.steps{list-style:none;padding:0;counter-reset:step}.steps li{counter-increment:step;position:relative;padding:0 0 1rem 3.1rem}.steps li::before{content:counter(step);position:absolute;left:0;top:0;width:2.3rem;height:2.3rem;border-radius:50%;background:var(--green);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:700}
+.tip{background:#eff4ec;border-radius:.6rem;padding:.7rem .9rem}
+.values{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:.8rem}.values p{margin:0;background:#fff;border:1px solid var(--line);border-radius:.75rem;padding:.9rem 1rem}
+.quote{margin:1.2rem 0 0;padding:1rem 1.2rem;background:#fbf3e2;border-radius:.75rem;font-family:"Songti SC","Songti TC",serif;font-size:1.2rem;font-weight:700;text-align:center}
+.cta .actions{margin:.6rem 0}
+@media(max-width:680px){.stats{display:grid;grid-template-columns:1fr 1fr}.features,.values{grid-template-columns:1fr}.feature img{width:52px;height:52px}.about .block>h2{font-size:1.4rem}}
+.story{margin:1rem 0 0;padding:1rem 1.2rem;background:#fbf3e2;border-radius:.9rem}.story p{margin:.3rem 0}.story b{color:#8c5a1e}
+.share-box{margin-top:1.4rem;padding:1rem;background:#eff4ec;border-radius:.75rem}.share-box h2{font-size:1.2rem}.share-box p{margin:.5rem 0}button.primary{background:var(--green);color:#fff;border-color:var(--green);font-weight:700}
