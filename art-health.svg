@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120" aria-hidden="true">
+  <!-- 看病健康：广州市花木棉 ＋ 澳洲桉树叶。原创简笔画。 -->
+  <defs>
+    <path id="petal" d="M0 0 C-11 -8 -10 -27 0 -33 C10 -27 11 -8 0 0 Z"/>
+    <path id="leaf" d="M0 0 C10 -8 30 -9 44 -1 C30 5 12 6 0 0 Z"/>
+  </defs>
+  <circle cx="60" cy="60" r="56" fill="#fbefe8"/>
+  <!-- 桉树叶 -->
+  <path d="M18 100 Q34 86 52 78" fill="none" stroke="#8a6a4a" stroke-width="2.4" stroke-linecap="round"/>
+  <g fill="#8fb3a6">
+    <use href="#leaf" transform="translate(24 95) rotate(-62)"/>
+    <use href="#leaf" transform="translate(32 89) rotate(10)"/>
+    <use href="#leaf" transform="translate(42 83) rotate(-30)"/>
+  </g>
+  <!-- 木棉花 -->
+  <g transform="translate(66 52)" fill="#d65a3a">
+    <use href="#petal"/>
+    <use href="#petal" transform="rotate(72)"/>
+    <use href="#petal" transform="rotate(144)"/>
+    <use href="#petal" transform="rotate(216)"/>
+    <use href="#petal" transform="rotate(288)"/>
+  </g>
+  <g transform="translate(66 52)" fill="#e9876a">
+    <use href="#petal" transform="scale(.55)"/>
+    <use href="#petal" transform="rotate(72) scale(.55)"/>
+    <use href="#petal" transform="rotate(144) scale(.55)"/>
+    <use href="#petal" transform="rotate(216) scale(.55)"/>
+    <use href="#petal" transform="rotate(288) scale(.55)"/>
+  </g>
+  <circle cx="66" cy="52" r="6" fill="#f2c14e"/>
+  <g fill="#f2c14e"><circle cx="66" cy="40" r="2"/><circle cx="77" cy="48" r="2"/><circle cx="73" cy="62" r="2"/><circle cx="59" cy="62" r="2"/><circle cx="55" cy="48" r="2"/></g>
+</svg>

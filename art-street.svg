@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120" aria-hidden="true">
+  <!-- 广州骑楼（底层连廊）＋ 悉尼带铁花阳台的老排屋。原创简笔画。 -->
+  <defs><clipPath id="c"><circle cx="60" cy="60" r="56"/></clipPath></defs>
+  <circle cx="60" cy="60" r="56" fill="#f6eee4"/>
+  <g clip-path="url(#c)">
+    <!-- 骑楼 -->
+    <rect x="14" y="36" width="48" height="62" fill="#efdcb8"/>
+    <path d="M12 37 H64 V31 H52 Q38 14 24 31 H12 Z" fill="#e2b877"/>
+    <circle cx="38" cy="27" r="3" fill="#c9533a"/>
+    <g fill="#6f8f86">
+      <path d="M20 60 V48 Q24 42 28 48 V60 Z"/><path d="M34 60 V48 Q38 42 42 48 V60 Z"/><path d="M48 60 V48 Q52 42 56 48 V60 Z"/>
+    </g>
+    <rect x="14" y="64" width="48" height="4" fill="#d39b5b"/>
+    <g fill="#6b5a4a">
+      <path d="M17 98 V80 Q22 71 27 80 V98 Z"/><path d="M33 98 V80 Q38 71 43 80 V98 Z"/><path d="M49 98 V80 Q54 71 59 80 V98 Z"/>
+    </g>
+    <!-- 悉尼排屋 -->
+    <rect x="66" y="40" width="42" height="58" fill="#c9826a"/>
+    <path d="M64 41 L87 30 L110 41 Z" fill="#7a5a4a"/>
+    <rect x="98" y="26" width="5" height="9" fill="#7a5a4a"/>
+    <rect x="76" y="56" width="9" height="12" fill="#4d5f58"/><rect x="90" y="56" width="9" height="12" fill="#4d5f58"/>
+    <path d="M64 53 Q87 44 110 53 V55 H64 Z" fill="#8aa69c"/>
+    <path d="M67 55 V98 M87 55 V98 M107 55 V98" stroke="#f7f3ea" stroke-width="1.6"/>
+    <rect x="64" y="64" width="46" height="6" fill="none" stroke="#f7f3ea" stroke-width="1.2"/>
+    <g fill="none" stroke="#f7f3ea" stroke-width="1"><circle cx="70" cy="67" r="2"/><circle cx="75" cy="67" r="2"/><circle cx="80" cy="67" r="2"/><circle cx="91" cy="67" r="2"/><circle cx="96" cy="67" r="2"/><circle cx="101" cy="67" r="2"/></g>
+    <path d="M67 58 Q71 55 75 55 M107 58 Q103 55 99 55 M87 58 Q83 55 80 55 M87 58 Q91 55 94 55" fill="none" stroke="#f7f3ea" stroke-width="1"/>
+    <rect x="72" y="80" width="8" height="18" fill="#4d5f58"/><rect x="90" y="78" width="11" height="12" fill="#efe6d2"/>
+    <rect x="0" y="98" width="120" height="22" fill="#d9cfbf"/>
+  </g>
+</svg>

@@ -22,3 +22,10 @@ nav{gap:.4rem}nav a{font-weight:700;padding:.4rem .68rem}nav a[aria-current],.ca
 .ai-help{margin-top:1.4rem;padding:1rem;background:#eff4ec;border-radius:.75rem}.ai-help h2{font-size:1.2rem}.ai-help p{margin:.5rem 0}.ai-help .prompt{background:#fff;border:1px solid var(--line);border-radius:.45rem;padding:.6rem .8rem;font-size:.95rem}.ai-help button{font-weight:700;background:var(--green);color:#fff;border-color:var(--green)}
 .card .actions{margin-top:.6rem}.card.contact .meta{margin-top:.5rem}
 @media(max-width:680px){.areas,.topics{width:calc(100% - 1.3rem)}}
+.wechat{margin-top:1.4rem;padding:1rem;background:#f3f7ef;border:2px solid var(--green);border-radius:.75rem}.wechat h2{font-size:1.2rem}.wechat p{margin:.5rem 0}.wechat img{display:block;width:min(240px,70vw);height:auto;margin:.8rem auto;background:#fff;padding:.5rem;border-radius:.5rem}
+.art-banner{width:min(100% - 2rem,54rem);margin:0 auto .5rem;line-height:0}.art-banner img{display:block;width:100%;height:auto}
+.art-badge{float:right;width:100px;height:100px;margin:0 0 .4rem .8rem}
+@media(max-width:680px){.art-banner{width:calc(100% - 1.3rem);overflow:hidden}.art-banner img{width:auto;height:52px;max-width:none;margin-left:50%;transform:translateX(-50%)}.art-badge{width:68px;height:68px;margin-left:.5rem}}
+.art-mini{float:right;width:56px;height:56px;margin:0 0 .3rem .6rem}
+@media(max-width:680px){.art-mini{width:48px;height:48px}}
+@media print{.art-banner,.art-badge,.art-mini{display:none}}

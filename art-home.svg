@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120" aria-hidden="true">
+  <!-- 岭南镬耳屋（两边山墙像锅耳）＋ 澳洲白桉树。原创简笔画。 -->
+  <defs><clipPath id="c"><circle cx="60" cy="60" r="56"/></clipPath></defs>
+  <circle cx="60" cy="60" r="56" fill="#eef1e6"/>
+  <g clip-path="url(#c)">
+    <!-- 白桉树 -->
+    <path d="M100 98 C98 80 102 66 96 52 M99 72 C104 64 110 60 116 58 M97 60 C92 54 88 50 84 46" fill="none" stroke="#e9e4da" stroke-width="5" stroke-linecap="round"/>
+    <path d="M100 98 C98 80 102 66 96 52" fill="none" stroke="#c9c1b2" stroke-width="1"/>
+    <g fill="#8fb3a6"><ellipse cx="84" cy="40" rx="10" ry="7"/><ellipse cx="98" cy="42" rx="9" ry="6"/><ellipse cx="114" cy="52" rx="9" ry="6"/><ellipse cx="94" cy="32" rx="8" ry="5"/></g>
+    <!-- 镬耳屋 -->
+    <rect x="14" y="62" width="74" height="36" fill="#b9c0bd"/>
+    <path d="M22 62 L32 48 H70 L80 62 Z" fill="#5a6260"/>
+    <path d="M38 50 V61 M46 50 V61 M54 50 V61 M62 50 V61 M70 50 V61" stroke="#454c4a" stroke-width="1"/>
+    <rect x="22" y="62" width="58" height="5" fill="#f2ede1"/>
+    <g fill="#b9c0bd" stroke="#3d4442" stroke-width="2.2" stroke-linejoin="round">
+      <path d="M10 98 V62 Q8 58 13 56 Q13 36 20 36 Q27 36 27 56 Q32 58 30 62 V98 Z"/>
+      <path d="M72 98 V62 Q70 58 75 56 Q75 36 82 36 Q89 36 89 56 Q94 58 92 62 V98 Z"/>
+    </g>
+    <path d="M16 56 Q16 40 20 40 Q24 40 24 56 M78 56 Q78 40 82 40 Q86 40 86 56" fill="none" stroke="#f2ede1" stroke-width="1.3"/>
+    <rect x="44" y="76" width="14" height="22" fill="#5b3f2e"/>
+    <rect x="42" y="72" width="18" height="4" fill="#c9533a"/>
+    <path d="M51 76 V98" stroke="#3a2a20" stroke-width="1"/>
+    <rect x="34" y="78" width="5" height="7" fill="#6f7775"/><rect x="63" y="78" width="5" height="7" fill="#6f7775"/>
+    <rect x="0" y="98" width="120" height="22" fill="#cfd8c4"/>
+  </g>
+</svg>

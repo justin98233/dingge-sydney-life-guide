@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120" aria-hidden="true">
+  <!-- 养老居家：中国的松（长寿）与满月 ＋ 澳洲笑翠鸟。原创简笔画。 -->
+  <defs>
+    <clipPath id="c"><circle cx="60" cy="60" r="56"/></clipPath>
+    <path id="tuft" d="M-14 0 A14 9 0 0 1 14 0 Z"/>
+  </defs>
+  <circle cx="60" cy="60" r="56" fill="#eaf1e6"/>
+  <g clip-path="url(#c)">
+    <circle cx="80" cy="36" r="20" fill="#f6e4b0"/>
+    <!-- 松枝 -->
+    <path d="M0 84 C30 80 56 82 116 70" fill="none" stroke="#7a5a3f" stroke-width="4" stroke-linecap="round"/>
+    <path d="M22 82 Q26 70 20 60 M90 75 Q96 64 92 54" fill="none" stroke="#7a5a3f" stroke-width="2.4" stroke-linecap="round"/>
+    <g fill="#3f7a5a">
+      <use href="#tuft" transform="translate(20 60)"/>
+      <use href="#tuft" transform="translate(12 70) scale(.8)"/>
+      <use href="#tuft" transform="translate(32 68) scale(.8)"/>
+      <use href="#tuft" transform="translate(92 54)"/>
+      <use href="#tuft" transform="translate(104 64) scale(.8)"/>
+    </g>
+    <g fill="#5d9673">
+      <use href="#tuft" transform="translate(20 60) scale(.55)"/>
+      <use href="#tuft" transform="translate(92 54) scale(.55)"/>
+    </g>
+    <!-- 笑翠鸟 -->
+    <path d="M40 78 L30 98 L37 98 L46 80 Z" fill="#a9673f"/>
+    <path d="M33 92 H38 M35 87 H41" stroke="#6b4228" stroke-width="1.4"/>
+    <ellipse cx="54" cy="70" rx="15" ry="12" fill="#f3ead8"/>
+    <path d="M42 66 C46 58 58 58 64 66 C58 72 48 74 42 66 Z" fill="#7d5a3e"/>
+    <path d="M50 66 C54 63 58 63 61 66 C57 68 53 68 50 66 Z" fill="#6f9fc2"/>
+    <circle cx="63" cy="52" r="11" fill="#f3ead8"/>
+    <path d="M54 50 C58 46 66 45 72 48 L74 50 C68 49 62 50 56 53 Z" fill="#7d5a3e"/>
+    <circle cx="65" cy="52" r="1.8" fill="#2e2a26"/>
+    <path d="M72 53 L86 56 L72 58 Z" fill="#5c4d40"/>
+    <path d="M50 81 V86 M57 81 V86" stroke="#8a6a4a" stroke-width="1.6" stroke-linecap="round"/>
+  </g>
+</svg>

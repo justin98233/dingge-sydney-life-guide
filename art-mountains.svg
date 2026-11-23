@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120" aria-hidden="true">
+  <!-- 中国的长城（远山上）＋ 悉尼西边蓝山的三姐妹岩（近处）。原创简笔画。 -->
+  <defs><clipPath id="c"><circle cx="60" cy="60" r="56"/></clipPath></defs>
+  <circle cx="60" cy="60" r="56" fill="#e9eff2"/>
+  <g clip-path="url(#c)">
+    <circle cx="36" cy="30" r="9" fill="#ecc06a" opacity=".85"/>
+    <!-- 远山与长城 -->
+    <path d="M0 80 L18 62 L34 68 L52 44 L66 52 L82 40 L120 62 V120 H0 Z" fill="#c7d9d1"/>
+    <path d="M0 77 L18 59 L34 65 L52 41 L66 49 L82 37 L100 47" fill="none" stroke="#b9a184" stroke-width="4" stroke-linejoin="round"/>
+    <path d="M0 74 L18 56 L34 62 L52 38 L66 46 L82 34 L100 44" fill="none" stroke="#b9a184" stroke-width="2.4" stroke-dasharray="2.2 2.2"/>
+    <rect x="47" y="31" width="10" height="10" fill="#b9a184"/><rect x="50.5" y="34" width="3" height="4" fill="#6f5c47"/>
+    <rect x="14" y="50" width="8" height="9" fill="#b9a184"/><rect x="16.5" y="53" width="3" height="3.5" fill="#6f5c47"/>
+    <rect x="78" y="27" width="8" height="9" fill="#b9a184"/>
+    <!-- 蓝山（桉树林的蓝雾） -->
+    <path d="M0 94 C20 84 40 88 60 84 C80 80 100 84 120 80 V120 H0 Z" fill="#9bb8cc"/>
+    <path d="M0 106 C30 98 60 102 120 92 V120 H0 Z" fill="#6f95ae"/>
+    <!-- 三姐妹岩 -->
+    <g fill="#cf9a63">
+      <path d="M68 96 V58 Q70 48 75 48 Q81 48 82 58 V96 Z"/>
+      <path d="M83 96 V64 Q85 56 89 56 Q94 56 95 64 V96 Z"/>
+      <path d="M96 96 V70 Q98 63 102 63 Q106 63 107 70 V96 Z"/>
+      <path d="M108 96 V70 Q114 62 124 64 V96 Z"/>
+    </g>
+    <path d="M69 64 H81 M69 72 H81 M69 80 H81 M84 70 H94 M84 78 H94 M97 76 H106 M97 84 H106" stroke="#a8733f" stroke-width="1.4"/>
+    <path d="M60 100 C78 94 96 96 120 90 V120 H60 Z" fill="#6f95ae"/>
+  </g>
+</svg>
