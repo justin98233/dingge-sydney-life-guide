@@ -86,9 +86,9 @@ function directory() {
     if (view === 'events') return name ? name + say('的活动','的活動') : say('悉尼活动','悉尼活動');
     if (view === 'contacts') return name ? name + say('：找谁用中文问','：找誰用中文問') : say('找谁用中文问','找誰用中文問');
     if (view === 'services' && topic !== 'all') return say('查服务：','查服務：') + topicName();
-    return {services:say('生活服务与健康资料','生活服務與健康資料'),saved:say('我的收藏','我的收藏')}[view];
+    return {services:say('生活服务与健康资料','生活服務與健康資料'),saved:say('我的收藏','我的收藏'),faq:say('最常见的问题','最常見的問題')}[view];
   }
-  const views = ['events','services','contacts','saved'];
+  const views = ['events','services','contacts','faq','saved'];
   function render() {
     const route = location.hash.slice(1);
     const legacy = cards.find(card => card.dataset.id === route && card.querySelector('a'));
@@ -114,11 +114,14 @@ function directory() {
     }
     for (const button of areaButtons) button.setAttribute('aria-pressed', String(button.dataset.area === area));
     for (const button of topicButtons) button.setAttribute('aria-pressed', String(button.dataset.topic === topic));
-    one('.areas').hidden = view === 'saved' || (view === 'services' && !all); // 服务都是全国／全州通用，地区按钮在“查服务”里没作用，藏起来
+    const faqMode = view === 'faq';
+    one('#faq').hidden = !faqMode; // “常见问题”页：问题和答案直接摆出来，隐藏搜索框和卡片列表
+    one('.directory').classList.toggle('faq-mode', faqMode);
+    one('.areas').hidden = view === 'saved' || faqMode || (view === 'services' && !all); // 服务都是全国／全州通用，地区按钮在“查服务”里没作用，藏起来
     one('.topics').hidden = view !== 'services' || all;
     one('#heading').textContent = all ? say('搜索结果','搜尋結果') : heading(view);
     one('#count').textContent = view === 'saved' ? say('收藏保存在当前浏览器。','收藏保存在目前的瀏覽器。') : count + say(' 条',' 條');
-    one('#empty').hidden = count !== 0;
+    one('#empty').hidden = count !== 0 || faqMode;
     one('#empty').textContent = query ? say('没有找到，可以换个词试试。','沒有找到，可以換個詞試試。')
       : view === 'saved' ? say('还没有收藏。打开一条内容，点“收藏这条”，下次就能在这里找到。','還沒有收藏。打開一條內容，點「收藏這條」，下次就能在這裏找到。')
       : say('这个地区暂时没有内容。可以点上面的“全部”看看。','這個地區暫時沒有內容。可以點上面的「全部」看看。');
@@ -277,3 +280,41 @@ if (one('#addcal')) {
     }
   });
 }
+
+// 外部官方网页自动翻译成中文（Justin 2026-11-24 要求）：用 Google 网页翻译（translate.goog）打开。
+// 已实测：Services Australia、healthdirect、卫生部、Dementia Australia 能翻；My Aged Care、NDIS、Service NSW、Beyond Blue 翻不动，
+// 它们（以及已经是中文、要登录办理或不是网页的链接）直接打开原网址。读者可在页脚关掉。
+(function autoTranslate() {
+  const key = 'dingge-translate-v1';
+  const skipHosts = ['translate.goog','myagedcare.gov.au','ndis.gov.au','service.nsw.gov.au','beyondblue.org.au',
+    'chatgpt.com','commons.wikimedia.org','mygov.gov.au','my.gov.au','gcaahealth.com','csfa.au','gwtp168.com','austacare.com.au','hawapurecare.com.au'];
+  const skipPath = /zh-hans|zh-hant|chinese|中文|\.pdf($|\?)|translated-resources|\/languages/i;
+  let on = true;
+  try { on = localStorage.getItem(key) !== 'off'; } catch {}
+  const links = Array.from(document.querySelectorAll('a[href^="http"]'));
+  for (const a of links) a.dataset.orig = a.getAttribute('href');
+  function translated(href) {
+    const url = new URL(href);
+    if (skipHosts.some(h => url.hostname === h || url.hostname.endsWith('.' + h))) return null;
+    if (skipPath.test(url.pathname + url.search)) return null;
+    const host = url.hostname.replace(/-/g,'--').replace(/\./g,'-') + '.translate.goog';
+    const q = new URLSearchParams(url.search);
+    q.set('_x_tr_sl','auto'); q.set('_x_tr_tl', hk ? 'zh-TW' : 'zh-CN'); q.set('_x_tr_hl', hk ? 'zh-TW' : 'zh-CN'); q.set('_x_tr_pto','wapp');
+    return 'https://' + host + url.pathname + '?' + q.toString() + url.hash;
+  }
+  function apply() {
+    for (const a of links) {
+      const t = on ? translated(a.dataset.orig) : null;
+      a.href = t || a.dataset.orig;
+    }
+    const box = document.querySelector('#auto-translate');
+    if (box) box.checked = on;
+  }
+  apply();
+  const box = document.querySelector('#auto-translate');
+  if (box) box.addEventListener('change', () => {
+    on = box.checked;
+    try { localStorage.setItem(key, on ? 'on' : 'off'); } catch {}
+    apply();
+  });
+})();
