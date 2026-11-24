@@ -1,0 +1,147 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//叮哥长者生活指南//悉尼长者生活指南//ZH
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-TIMEZONE:Australia/Sydney
+BEGIN:VEVENT
+UID:tech-assist-burwood-20261125@dingge-sydney-life-guide
+DTSTAMP:20261124T123421Z
+DTSTART:20261125T223000Z
+DTEND:20261126T013000Z
+SUMMARY:手机、平板一对一协助（普通话、粤语）
+LOCATION:Burwood Library and Community Hub\, 2 Conder Street\, Burwood NSW
+  2134
+DESCRIPTION:宝活图书馆和华人服务社合办，每周四上午有
+ 人一对一教你用手机、平板。出发前请先打电话向主办
+ 方确认时间，主办方可能临时改期或取消。详情和电话
+ 见：https://justin98233.github.io/dingge-sydney-life-guide/guide-tech-a
+ ssist-burwood.html
+URL:https://justin98233.github.io/dingge-sydney-life-guide/guide-tech-assi
+ st-burwood.html
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:手机、平板一对一协助（普通话、粤语）（明
+ 天）
+TRIGGER:-P1D
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:手机、平板一对一协助（普通话、粤语）（1 小
+ 时后开始）
+TRIGGER:-PT1H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:tech-assist-burwood-20261202@dingge-sydney-life-guide
+DTSTAMP:20261124T123421Z
+DTSTART:20261202T223000Z
+DTEND:20261203T013000Z
+SUMMARY:手机、平板一对一协助（普通话、粤语）
+LOCATION:Burwood Library and Community Hub\, 2 Conder Street\, Burwood NSW
+  2134
+DESCRIPTION:宝活图书馆和华人服务社合办，每周四上午有
+ 人一对一教你用手机、平板。出发前请先打电话向主办
+ 方确认时间，主办方可能临时改期或取消。详情和电话
+ 见：https://justin98233.github.io/dingge-sydney-life-guide/guide-tech-a
+ ssist-burwood.html
+URL:https://justin98233.github.io/dingge-sydney-life-guide/guide-tech-assi
+ st-burwood.html
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:手机、平板一对一协助（普通话、粤语）（明
+ 天）
+TRIGGER:-P1D
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:手机、平板一对一协助（普通话、粤语）（1 小
+ 时后开始）
+TRIGGER:-PT1H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:tech-assist-burwood-20261209@dingge-sydney-life-guide
+DTSTAMP:20261124T123421Z
+DTSTART:20261209T223000Z
+DTEND:20261210T013000Z
+SUMMARY:手机、平板一对一协助（普通话、粤语）
+LOCATION:Burwood Library and Community Hub\, 2 Conder Street\, Burwood NSW
+  2134
+DESCRIPTION:宝活图书馆和华人服务社合办，每周四上午有
+ 人一对一教你用手机、平板。出发前请先打电话向主办
+ 方确认时间，主办方可能临时改期或取消。详情和电话
+ 见：https://justin98233.github.io/dingge-sydney-life-guide/guide-tech-a
+ ssist-burwood.html
+URL:https://justin98233.github.io/dingge-sydney-life-guide/guide-tech-assi
+ st-burwood.html
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:手机、平板一对一协助（普通话、粤语）（明
+ 天）
+TRIGGER:-P1D
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:手机、平板一对一协助（普通话、粤语）（1 小
+ 时后开始）
+TRIGGER:-PT1H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:tech-assist-burwood-20261216@dingge-sydney-life-guide
+DTSTAMP:20261124T123421Z
+DTSTART:20261216T223000Z
+DTEND:20261217T013000Z
+SUMMARY:手机、平板一对一协助（普通话、粤语）
+LOCATION:Burwood Library and Community Hub\, 2 Conder Street\, Burwood NSW
+  2134
+DESCRIPTION:宝活图书馆和华人服务社合办，每周四上午有
+ 人一对一教你用手机、平板。出发前请先打电话向主办
+ 方确认时间，主办方可能临时改期或取消。详情和电话
+ 见：https://justin98233.github.io/dingge-sydney-life-guide/guide-tech-a
+ ssist-burwood.html
+URL:https://justin98233.github.io/dingge-sydney-life-guide/guide-tech-assi
+ st-burwood.html
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:手机、平板一对一协助（普通话、粤语）（明
+ 天）
+TRIGGER:-P1D
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:手机、平板一对一协助（普通话、粤语）（1 小
+ 时后开始）
+TRIGGER:-PT1H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:tech-assist-burwood-20270120@dingge-sydney-life-guide
+DTSTAMP:20261124T123421Z
+DTSTART:20270120T223000Z
+DTEND:20270121T013000Z
+SUMMARY:手机、平板一对一协助（普通话、粤语）
+LOCATION:Burwood Library and Community Hub\, 2 Conder Street\, Burwood NSW
+  2134
+DESCRIPTION:宝活图书馆和华人服务社合办，每周四上午有
+ 人一对一教你用手机、平板。出发前请先打电话向主办
+ 方确认时间，主办方可能临时改期或取消。详情和电话
+ 见：https://justin98233.github.io/dingge-sydney-life-guide/guide-tech-a
+ ssist-burwood.html
+URL:https://justin98233.github.io/dingge-sydney-life-guide/guide-tech-assi
+ st-burwood.html
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:手机、平板一对一协助（普通话、粤语）（明
+ 天）
+TRIGGER:-P1D
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:手机、平板一对一协助（普通话、粤语）（1 小
+ 时后开始）
+TRIGGER:-PT1H
+END:VALARM
+END:VEVENT
+END:VCALENDAR

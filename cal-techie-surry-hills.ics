@@ -1,0 +1,34 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//叮哥长者生活指南//悉尼长者生活指南//ZH
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-TIMEZONE:Australia/Sydney
+BEGIN:VEVENT
+UID:techie-surry-hills-20261130@dingge-sydney-life-guide
+DTSTAMP:20261124T123421Z
+DTSTART:20261130T000000Z
+DTEND:20261130T010000Z
+SUMMARY:图书馆一对一电脑手机协助（Surry Hills）
+LOCATION:Surry Hills Library\, 405 Crown Street\, Surry Hills NSW 2010
+DESCRIPTION:每周一上午有图书馆员一对一帮你解决电脑、
+ 手机的基本问题；今年的最后一场是 11 月 30 日。出发
+ 前请先打电话向主办方确认时间，主办方可能临时改期
+ 或取消。详情和电话见：https://justin98233.github.io/dingge-syd
+ ney-life-guide/guide-techie-surry-hills.html
+URL:https://justin98233.github.io/dingge-sydney-life-guide/guide-techie-su
+ rry-hills.html
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:图书馆一对一电脑手机协助（Surry Hills）（明天
+ ）
+TRIGGER:-P1D
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:图书馆一对一电脑手机协助（Surry Hills）（1 小
+ 时后开始）
+TRIGGER:-PT1H
+END:VALARM
+END:VEVENT
+END:VCALENDAR

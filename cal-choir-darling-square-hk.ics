@@ -1,0 +1,35 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//叮哥長者生活指南//悉尼長者生活指南//ZH
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-TIMEZONE:Australia/Sydney
+BEGIN:VEVENT
+UID:choir-darling-square-20261126@dingge-sydney-life-guide
+DTSTAMP:20261124T123422Z
+DTSTART:20261126T070000Z
+DTEND:20261126T080000Z
+SUMMARY:和 Sydney Street Choir 一起唱歌（達令廣場圖書館）
+LOCATION:Darling Square Library\, Levels 1 and 2\, The Exchange\, 1 Little
+  Pier Street\, Haymarket NSW 2000
+DESCRIPTION:聽合唱團現場表演，再一起學唱一首歌，歡迎
+ 各個年齡，不會唱也可以參加。出發前請先打電話向主
+ 辦方確認時間，主辦方可能臨時改期或取消。詳情和電
+ 話見：https://justin98233.github.io/dingge-sydney-life-guide/guide-cho
+ ir-darling-square-hk.html
+URL:https://justin98233.github.io/dingge-sydney-life-guide/guide-choir-dar
+ ling-square-hk.html
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:和 Sydney Street Choir 一起唱歌（達令廣場圖書館
+ ）（明天）
+TRIGGER:-P1D
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:和 Sydney Street Choir 一起唱歌（達令廣場圖書館
+ ）（1 小時後開始）
+TRIGGER:-PT1H
+END:VALARM
+END:VEVENT
+END:VCALENDAR

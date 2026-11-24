@@ -80,7 +80,7 @@ function directory() {
   const inTopic = card => topic === 'all' || (card.dataset.topics || '').split(' ').includes(topic);
   const topicName = () => topic === 'all' ? '' : one('[data-topic="' + topic + '"]').textContent;
   const inArea = card => area === 'all' || card.dataset.areas.split(' ').some(a => a === 'all' || a === area);
-  const areaName = () => area === 'all' ? '' : one('[data-area="' + area + '"]').textContent;
+  const areaName = () => area === 'all' ? '' : one('[data-area="' + area + '"]').dataset.name;
   function heading(view) {
     const name = areaName();
     if (view === 'events') return name ? name + say('的活动','的活動') : say('悉尼活动','悉尼活動');

@@ -1,0 +1,152 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//叮哥长者生活指南//悉尼长者生活指南//ZH
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-TIMEZONE:Australia/Sydney
+BEGIN:VEVENT
+UID:settlement-burwood-20261125@dingge-sydney-life-guide
+DTSTAMP:20261124T123421Z
+DTSTART:20261125T223000Z
+DTEND:20261126T060000Z
+SUMMARY:CASS 定居服务（宝活图书馆，来澳不足 5 年的新移
+ 民）
+LOCATION:Burwood Library and Community Hub\, 2 Conder Street\, Burwood NSW
+  2134
+DESCRIPTION:CASS 社工每周四在宝活图书馆，帮来澳不足 5 年
+ 的华人新移民办定居相关的事。出发前请先打电话向主
+ 办方确认时间，主办方可能临时改期或取消。详情和电
+ 话见：https://justin98233.github.io/dingge-sydney-life-guide/guide-set
+ tlement-burwood.html
+URL:https://justin98233.github.io/dingge-sydney-life-guide/guide-settlemen
+ t-burwood.html
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:CASS 定居服务（宝活图书馆，来澳不足 5 年的新
+ 移民）（明天）
+TRIGGER:-P1D
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:CASS 定居服务（宝活图书馆，来澳不足 5 年的新
+ 移民）（1 小时后开始）
+TRIGGER:-PT1H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:settlement-burwood-20261202@dingge-sydney-life-guide
+DTSTAMP:20261124T123421Z
+DTSTART:20261202T223000Z
+DTEND:20261203T060000Z
+SUMMARY:CASS 定居服务（宝活图书馆，来澳不足 5 年的新移
+ 民）
+LOCATION:Burwood Library and Community Hub\, 2 Conder Street\, Burwood NSW
+  2134
+DESCRIPTION:CASS 社工每周四在宝活图书馆，帮来澳不足 5 年
+ 的华人新移民办定居相关的事。出发前请先打电话向主
+ 办方确认时间，主办方可能临时改期或取消。详情和电
+ 话见：https://justin98233.github.io/dingge-sydney-life-guide/guide-set
+ tlement-burwood.html
+URL:https://justin98233.github.io/dingge-sydney-life-guide/guide-settlemen
+ t-burwood.html
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:CASS 定居服务（宝活图书馆，来澳不足 5 年的新
+ 移民）（明天）
+TRIGGER:-P1D
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:CASS 定居服务（宝活图书馆，来澳不足 5 年的新
+ 移民）（1 小时后开始）
+TRIGGER:-PT1H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:settlement-burwood-20261209@dingge-sydney-life-guide
+DTSTAMP:20261124T123421Z
+DTSTART:20261209T223000Z
+DTEND:20261210T060000Z
+SUMMARY:CASS 定居服务（宝活图书馆，来澳不足 5 年的新移
+ 民）
+LOCATION:Burwood Library and Community Hub\, 2 Conder Street\, Burwood NSW
+  2134
+DESCRIPTION:CASS 社工每周四在宝活图书馆，帮来澳不足 5 年
+ 的华人新移民办定居相关的事。出发前请先打电话向主
+ 办方确认时间，主办方可能临时改期或取消。详情和电
+ 话见：https://justin98233.github.io/dingge-sydney-life-guide/guide-set
+ tlement-burwood.html
+URL:https://justin98233.github.io/dingge-sydney-life-guide/guide-settlemen
+ t-burwood.html
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:CASS 定居服务（宝活图书馆，来澳不足 5 年的新
+ 移民）（明天）
+TRIGGER:-P1D
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:CASS 定居服务（宝活图书馆，来澳不足 5 年的新
+ 移民）（1 小时后开始）
+TRIGGER:-PT1H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:settlement-burwood-20261216@dingge-sydney-life-guide
+DTSTAMP:20261124T123421Z
+DTSTART:20261216T223000Z
+DTEND:20261217T060000Z
+SUMMARY:CASS 定居服务（宝活图书馆，来澳不足 5 年的新移
+ 民）
+LOCATION:Burwood Library and Community Hub\, 2 Conder Street\, Burwood NSW
+  2134
+DESCRIPTION:CASS 社工每周四在宝活图书馆，帮来澳不足 5 年
+ 的华人新移民办定居相关的事。出发前请先打电话向主
+ 办方确认时间，主办方可能临时改期或取消。详情和电
+ 话见：https://justin98233.github.io/dingge-sydney-life-guide/guide-set
+ tlement-burwood.html
+URL:https://justin98233.github.io/dingge-sydney-life-guide/guide-settlemen
+ t-burwood.html
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:CASS 定居服务（宝活图书馆，来澳不足 5 年的新
+ 移民）（明天）
+TRIGGER:-P1D
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:CASS 定居服务（宝活图书馆，来澳不足 5 年的新
+ 移民）（1 小时后开始）
+TRIGGER:-PT1H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:settlement-burwood-20270113@dingge-sydney-life-guide
+DTSTAMP:20261124T123421Z
+DTSTART:20270113T223000Z
+DTEND:20270114T063000Z
+SUMMARY:CASS 定居服务（宝活图书馆，来澳不足 5 年的新移
+ 民）
+LOCATION:Burwood Library and Community Hub\, 2 Conder Street\, Burwood NSW
+  2134
+DESCRIPTION:CASS 社工每周四在宝活图书馆，帮来澳不足 5 年
+ 的华人新移民办定居相关的事。出发前请先打电话向主
+ 办方确认时间，主办方可能临时改期或取消。详情和电
+ 话见：https://justin98233.github.io/dingge-sydney-life-guide/guide-set
+ tlement-burwood.html
+URL:https://justin98233.github.io/dingge-sydney-life-guide/guide-settlemen
+ t-burwood.html
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:CASS 定居服务（宝活图书馆，来澳不足 5 年的新
+ 移民）（明天）
+TRIGGER:-P1D
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:CASS 定居服务（宝活图书馆，来澳不足 5 年的新
+ 移民）（1 小时后开始）
+TRIGGER:-PT1H
+END:VALARM
+END:VEVENT
+END:VCALENDAR

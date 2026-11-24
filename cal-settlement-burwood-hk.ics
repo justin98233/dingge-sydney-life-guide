@@ -1,0 +1,152 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//叮哥長者生活指南//悉尼長者生活指南//ZH
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-TIMEZONE:Australia/Sydney
+BEGIN:VEVENT
+UID:settlement-burwood-20261125@dingge-sydney-life-guide
+DTSTAMP:20261124T123422Z
+DTSTART:20261125T223000Z
+DTEND:20261126T060000Z
+SUMMARY:CASS 定居服務（寶活圖書館，來澳不足 5 年的新移
+ 民）
+LOCATION:Burwood Library and Community Hub\, 2 Conder Street\, Burwood NSW
+  2134
+DESCRIPTION:CASS 社工每週四在寶活圖書館，幫來澳不足 5 年
+ 的華人新移民辦定居相關的事。出發前請先打電話向主
+ 辦方確認時間，主辦方可能臨時改期或取消。詳情和電
+ 話見：https://justin98233.github.io/dingge-sydney-life-guide/guide-set
+ tlement-burwood-hk.html
+URL:https://justin98233.github.io/dingge-sydney-life-guide/guide-settlemen
+ t-burwood-hk.html
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:CASS 定居服務（寶活圖書館，來澳不足 5 年的新
+ 移民）（明天）
+TRIGGER:-P1D
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:CASS 定居服務（寶活圖書館，來澳不足 5 年的新
+ 移民）（1 小時後開始）
+TRIGGER:-PT1H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:settlement-burwood-20261202@dingge-sydney-life-guide
+DTSTAMP:20261124T123422Z
+DTSTART:20261202T223000Z
+DTEND:20261203T060000Z
+SUMMARY:CASS 定居服務（寶活圖書館，來澳不足 5 年的新移
+ 民）
+LOCATION:Burwood Library and Community Hub\, 2 Conder Street\, Burwood NSW
+  2134
+DESCRIPTION:CASS 社工每週四在寶活圖書館，幫來澳不足 5 年
+ 的華人新移民辦定居相關的事。出發前請先打電話向主
+ 辦方確認時間，主辦方可能臨時改期或取消。詳情和電
+ 話見：https://justin98233.github.io/dingge-sydney-life-guide/guide-set
+ tlement-burwood-hk.html
+URL:https://justin98233.github.io/dingge-sydney-life-guide/guide-settlemen
+ t-burwood-hk.html
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:CASS 定居服務（寶活圖書館，來澳不足 5 年的新
+ 移民）（明天）
+TRIGGER:-P1D
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:CASS 定居服務（寶活圖書館，來澳不足 5 年的新
+ 移民）（1 小時後開始）
+TRIGGER:-PT1H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:settlement-burwood-20261209@dingge-sydney-life-guide
+DTSTAMP:20261124T123422Z
+DTSTART:20261209T223000Z
+DTEND:20261210T060000Z
+SUMMARY:CASS 定居服務（寶活圖書館，來澳不足 5 年的新移
+ 民）
+LOCATION:Burwood Library and Community Hub\, 2 Conder Street\, Burwood NSW
+  2134
+DESCRIPTION:CASS 社工每週四在寶活圖書館，幫來澳不足 5 年
+ 的華人新移民辦定居相關的事。出發前請先打電話向主
+ 辦方確認時間，主辦方可能臨時改期或取消。詳情和電
+ 話見：https://justin98233.github.io/dingge-sydney-life-guide/guide-set
+ tlement-burwood-hk.html
+URL:https://justin98233.github.io/dingge-sydney-life-guide/guide-settlemen
+ t-burwood-hk.html
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:CASS 定居服務（寶活圖書館，來澳不足 5 年的新
+ 移民）（明天）
+TRIGGER:-P1D
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:CASS 定居服務（寶活圖書館，來澳不足 5 年的新
+ 移民）（1 小時後開始）
+TRIGGER:-PT1H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:settlement-burwood-20261216@dingge-sydney-life-guide
+DTSTAMP:20261124T123422Z
+DTSTART:20261216T223000Z
+DTEND:20261217T060000Z
+SUMMARY:CASS 定居服務（寶活圖書館，來澳不足 5 年的新移
+ 民）
+LOCATION:Burwood Library and Community Hub\, 2 Conder Street\, Burwood NSW
+  2134
+DESCRIPTION:CASS 社工每週四在寶活圖書館，幫來澳不足 5 年
+ 的華人新移民辦定居相關的事。出發前請先打電話向主
+ 辦方確認時間，主辦方可能臨時改期或取消。詳情和電
+ 話見：https://justin98233.github.io/dingge-sydney-life-guide/guide-set
+ tlement-burwood-hk.html
+URL:https://justin98233.github.io/dingge-sydney-life-guide/guide-settlemen
+ t-burwood-hk.html
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:CASS 定居服務（寶活圖書館，來澳不足 5 年的新
+ 移民）（明天）
+TRIGGER:-P1D
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:CASS 定居服務（寶活圖書館，來澳不足 5 年的新
+ 移民）（1 小時後開始）
+TRIGGER:-PT1H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:settlement-burwood-20270113@dingge-sydney-life-guide
+DTSTAMP:20261124T123422Z
+DTSTART:20270113T223000Z
+DTEND:20270114T063000Z
+SUMMARY:CASS 定居服務（寶活圖書館，來澳不足 5 年的新移
+ 民）
+LOCATION:Burwood Library and Community Hub\, 2 Conder Street\, Burwood NSW
+  2134
+DESCRIPTION:CASS 社工每週四在寶活圖書館，幫來澳不足 5 年
+ 的華人新移民辦定居相關的事。出發前請先打電話向主
+ 辦方確認時間，主辦方可能臨時改期或取消。詳情和電
+ 話見：https://justin98233.github.io/dingge-sydney-life-guide/guide-set
+ tlement-burwood-hk.html
+URL:https://justin98233.github.io/dingge-sydney-life-guide/guide-settlemen
+ t-burwood-hk.html
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:CASS 定居服務（寶活圖書館，來澳不足 5 年的新
+ 移民）（明天）
+TRIGGER:-P1D
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:CASS 定居服務（寶活圖書館，來澳不足 5 年的新
+ 移民）（1 小時後開始）
+TRIGGER:-PT1H
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,35 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//叮哥長者生活指南//悉尼長者生活指南//ZH
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-TIMEZONE:Australia/Sydney
+BEGIN:VEVENT
+UID:music-darling-square-20261128@dingge-sydney-life-guide
+DTSTAMP:20261124T123422Z
+DTSTART:20261128T023000Z
+DTEND:20261128T033000Z
+SUMMARY:音樂、聚會和身心舒緩（達令廣場圖書館）
+LOCATION:Darling Square Library\, Levels 1 and 2\, The Exchange\, 1 Little
+  Pier Street\, Haymarket NSW 2000
+DESCRIPTION:音樂教育工作者帶大家玩打擊樂、對唱、做節
+ 奏，在輕鬆的環境裏感受音樂帶來的聯繫。出發前請先
+ 打電話向主辦方確認時間，主辦方可能臨時改期或取消
+ 。詳情和電話見：https://justin98233.github.io/dingge-sydney-life-
+ guide/guide-music-darling-square-hk.html
+URL:https://justin98233.github.io/dingge-sydney-life-guide/guide-music-dar
+ ling-square-hk.html
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:音樂、聚會和身心舒緩（達令廣場圖書館）（
+ 明天）
+TRIGGER:-P1D
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:音樂、聚會和身心舒緩（達令廣場圖書館）（1 
+ 小時後開始）
+TRIGGER:-PT1H
+END:VALARM
+END:VEVENT
+END:VCALENDAR
