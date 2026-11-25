@@ -203,15 +203,19 @@ function entry(detail) {
     status.textContent = message;
   };
 }
-// 功能介绍页的“发给朋友”（2026-11-23）：和专题页一样，微信里提示用右上角转发，其他浏览器用系统分享或复制链接
-function shareAbout(button) {
+function sharePage(button) {
   const status = one('#message');
   const field = one('#share-url');
-  const url = new URL(location.href);
+  const url = new URL(button.dataset.url || location.href);
   url.hash = ''; url.search = '';
   field.value = url.href;
   const inWeChat = /MicroMessenger/i.test(navigator.userAgent);
   button.onclick = async () => {
+    if (inWeChat && button.id === 'share-home' && /^https?:$/.test(location.protocol)) {
+      // 微信菜单转发当前地址。去掉安装标记和当前栏目，让收件人进入普通首页。
+      history.replaceState(history.state, '', location.pathname);
+      window.dispatchEvent(new Event('hashchange'));
+    }
     if (!inWeChat && navigator.share) {
       try { await navigator.share({title:document.title,url:url.href}); return; }
       catch (error) { if (error.name === 'AbortError') return; }
@@ -231,7 +235,8 @@ function shareAbout(button) {
     status.textContent = message;
   };
 }
-if (one('#share-about')) shareAbout(one('#share-about'));
+const pageShare = one('#share-home, #share-about');
+if (pageShare) sharePage(pageShare);
 if (one('.cards')) directory();
 if (one('.detail')) entry(one('.detail'));
 
@@ -252,24 +257,99 @@ if ('serviceWorker' in navigator && (location.protocol === 'https:' || location.
 })();
 const standalone = window.matchMedia('(display-mode: standalone)').matches || navigator.standalone === true;
 if (standalone) document.documentElement.classList.add('standalone');
-if (one('#install-now')) {
-  const box = one('.install-now');
-  const msg = one('#install-msg');
-  let prompt;
-  if (standalone) { box.hidden = false; one('#install-now').hidden = true; msg.textContent = say('你已经在用桌面版了。','你已經在用桌面版了。'); }
+const oldInstall = one('#install-home-link');
+if (oldInstall) location.replace(oldInstall.href);
+
+function setupHomeInstall(link) {
+  const panel = one('#install-guide');
+  const status = one('#install-msg');
+  const nativeButton = one('#install-now');
+  const agent = navigator.userAgent;
+  const ios = /iPhone|iPad|iPod/i.test(agent) || (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
+  const android = /Android/i.test(agent);
+  let installed = standalone;
+  let accepted = false;
+  let installEvent;
+
+  function device() {
+    if (installed) return 'installed';
+    if (accepted) return 'pending';
+    if (inWeChatApp && (ios || android)) return 'wechat';
+    if (ios) return /Version\/.*Safari\//.test(agent) && !/CriOS|FxiOS|EdgiOS|OPiOS/.test(agent) ? 'ios' : 'ios-browser';
+    if (android && installEvent) return 'ready';
+    return android ? 'android' : 'desktop';
+  }
+
+  function refresh() {
+    const current = device();
+    for (const block of panel.querySelectorAll('[data-device]')) block.hidden = block.dataset.device !== current;
+  }
+  function reveal() {
+    one('#share-options').hidden = true;
+    link.setAttribute('aria-expanded','true');
+    panel.hidden = false;
+    refresh();
+  }
+  function clearInstallFlag() {
+    const url = new URL(location.href);
+    if (!url.searchParams.has('install')) return;
+    url.searchParams.delete('install');
+    history.replaceState(history.state, '', url);
+  }
+  function close() {
+    panel.hidden = true;
+    link.setAttribute('aria-expanded','false');
+    clearInstallFlag();
+  }
+  async function promptInstall() {
+    const event = installEvent;
+    if (!event) return;
+    installEvent = null;
+    nativeButton.disabled = true;
+    try {
+      await event.prompt();
+      const choice = await event.userChoice;
+      accepted = choice.outcome === 'accepted';
+    } catch {
+      status.textContent = say('请从浏览器菜单添加。','請從瀏覽器選單加入。');
+    } finally {
+      nativeButton.disabled = false;
+      refresh();
+    }
+  }
   window.addEventListener('beforeinstallprompt', event => {
-    event.preventDefault(); prompt = event;
-    if (!standalone) box.hidden = false;
+    if (!android || inWeChatApp) return;
+    event.preventDefault();
+    installEvent = event;
+    refresh();
   });
-  one('#install-now').onclick = async () => {
-    if (!prompt) return;
-    prompt.prompt();
-    const choice = await prompt.userChoice;
-    msg.textContent = choice.outcome === 'accepted' ? say('已装好，桌面上找绿色的“叮”字图标。','已裝好，桌面上找綠色的「叮」字圖標。') : say('没关系，以后想装再点。','沒關係，以後想裝再點。');
-    prompt = null;
+  window.addEventListener('appinstalled', () => {
+    installed = true;
+    installEvent = null;
+    status.textContent = '';
+    refresh();
+  });
+  nativeButton.onclick = promptInstall;
+  link.setAttribute('aria-expanded','false');
+  link.onclick = event => {
+    event.preventDefault();
+    if (!panel.hidden) { close(); return; }
+    reveal();
+    if (device() === 'wechat' && /^https?:$/.test(location.protocol)) {
+      const url = new URL(location.href);
+      url.searchParams.set('install','1');
+      history.replaceState(history.state,'',url);
+    }
+    if (device() === 'ready') promptInstall();
   };
-  window.addEventListener('appinstalled', () => { msg.textContent = say('已装好，桌面上找绿色的“叮”字图标。','已裝好，桌面上找綠色的「叮」字圖標。'); });
+  one('#close-install').onclick = () => { close(); link.focus(); };
+  one('#share-home').addEventListener('click',close);
+  if (new URL(location.href).searchParams.get('install') === '1') {
+    reveal();
+    if (device() !== 'wechat') clearInstallFlag();
+  }
 }
+if (one('#home-install')) setupHomeInstall(one('#home-install'));
 if (one('#addcal')) {
   one('#addcal').addEventListener('click', event => {
     if (inWeChatApp) { // 微信不让网页直接下载文件

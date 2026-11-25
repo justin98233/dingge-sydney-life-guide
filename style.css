@@ -68,3 +68,12 @@ nav{gap:.4rem}nav a{font-weight:700;padding:.4rem .68rem}nav a[aria-current],.ca
 .translate-note{font-size:.88rem;color:var(--mid);margin:.6rem 0}.translate-note input{width:1.2rem;height:1.2rem;vertical-align:-.2rem}
 .areas button{flex-direction:column;line-height:1.25;padding-top:.3rem;padding-bottom:.3rem}.areas button small{display:block;font-size:.72rem;opacity:.8;font-weight:400}
 .areas button span{font-weight:inherit;color:inherit;font-size:inherit}
+
+.family-actions{display:flex;flex-wrap:wrap;gap:.5rem;margin:.8rem 0 .4rem}
+.family-actions>*{display:inline-flex;align-items:center;justify-content:center;flex:1 1 10rem;min-height:52px;text-align:center;font-weight:700;padding:.55rem .75rem}
+#install-guide{background:var(--paper);border:1px solid var(--line);border-radius:.65rem;margin:.65rem 0;padding:.85rem 1rem}
+#install-guide h2{font-size:1.12rem;margin:0 0 .4rem}
+#install-guide p,#install-guide ol{margin:.4rem 0}
+#install-guide ol{padding-inline-start:1.5rem}
+#install-guide li+li{margin-top:.4rem}
+#install-msg:empty{display:none}
