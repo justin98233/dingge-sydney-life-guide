@@ -371,7 +371,9 @@ if (one('#addcal')) {
   const skipPath = /zh-hans|zh-hant|chinese|中文|\.pdf($|\?)|translated-resources|\/languages/i;
   let on = true;
   try { on = localStorage.getItem(key) !== 'off'; } catch {}
-  const links = Array.from(document.querySelectorAll('a[href^="http"]'));
+  // 栏目切换会把语言链接补成完整网址。站内导航不交给外部翻译。
+  const links = Array.from(document.querySelectorAll('a[href^="http"]'))
+    .filter(link => link.origin !== location.origin);
   for (const a of links) a.dataset.orig = a.getAttribute('href');
   function translated(href) {
     const url = new URL(href);
